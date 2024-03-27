@@ -1,9 +1,9 @@
 import 'package:appnews/services/api.dart';
+import 'package:appnews/services/api_gnews.dart';
 import 'package:appnews/services/news_services.dart';
 import 'package:appnews/widget/Circular.dart';
 import 'package:appnews/widget/error_messege.dart';
 import 'package:appnews/widget/news_Top_headlines/news_List_2.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class NewsListView extends StatefulWidget {

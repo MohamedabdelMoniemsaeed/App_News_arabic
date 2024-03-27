@@ -8,15 +8,40 @@ import 'package:flutter/material.dart';
 class CarouselSliderApp extends StatelessWidget {
   List<Newsheadlines> listNewsheadlines = [
     Newsheadlines(
-      name: 'Entertainment',
-      images: ImagesApp.entertainment,
+      name: 'عام',
+      images: ImagesApp.general,
+      category: 'general',
     ),
-    Newsheadlines(name: 'Health', images: ImagesApp.health),
-    Newsheadlines(name: 'Science', images: ImagesApp.science),
-    Newsheadlines(name: 'Business', images: ImagesApp.business),
-    Newsheadlines(name: 'General', images: ImagesApp.general),
-    Newsheadlines(name: 'Sports', images: ImagesApp.sports),
-    Newsheadlines(name: 'Technology', images: ImagesApp.technology),
+    Newsheadlines(
+      name: 'الصحة',
+      images: ImagesApp.health,
+      category: 'health',
+    ),
+    Newsheadlines(
+      name: 'علوم',
+      images: ImagesApp.science,
+      category: 'science',
+    ),
+    Newsheadlines(
+      name: 'ترفيه',
+      images: ImagesApp.entertainment,
+      category: 'entertainment',
+    ),
+    Newsheadlines(
+      name: 'اعمال',
+      images: ImagesApp.business,
+      category: 'business',
+    ),
+    Newsheadlines(
+      name: 'رياضة',
+      images: ImagesApp.sports,
+      category: 'sports',
+    ),
+    Newsheadlines(
+      name: 'تكنولوجيا',
+      images: ImagesApp.technology,
+      category: 'technology',
+    ),
   ];
   @override
   Widget build(BuildContext context) {

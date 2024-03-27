@@ -5,11 +5,12 @@ import 'package:flutter/material.dart';
 class Newsheadlines extends StatelessWidget {
   String name;
   String images;
-  Newsheadlines({
-    super.key,
-    required this.name,
-    required this.images,
-  });
+  String category;
+  Newsheadlines(
+      {super.key,
+      required this.name,
+      required this.images,
+      required this.category});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class Newsheadlines extends StatelessWidget {
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => CategoryView(
-            category: name,
+            category: category,
           ),
         ));
       },
@@ -30,7 +31,7 @@ class Newsheadlines extends StatelessWidget {
           child: Center(
             child: Text(name,
                 style: const TextStyle(
-                    backgroundColor: Colors.white24,
+                    backgroundColor: Colors.white30,
                     color: Colors.black,
                     fontSize: 20,
                     fontWeight: FontWeight.bold)),

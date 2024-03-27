@@ -1,7 +1,6 @@
-
 // ignore: must_be_immutable
-import 'package:appnews/services/api.dart';
 import 'package:appnews/widget/news_Top_headlines/new_1.dart';
+import 'package:appnews/services/api_gnews.dart';
 import 'package:flutter/material.dart';
 
 class TheNews extends StatelessWidget {

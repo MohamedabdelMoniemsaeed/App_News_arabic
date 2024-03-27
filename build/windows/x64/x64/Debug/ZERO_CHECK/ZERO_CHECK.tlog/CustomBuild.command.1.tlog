@@ -1,0 +1,10 @@
+^D:\APP_NEWS\BUILD\WINDOWS\X64\CMAKEFILES\2D9E1731D7A2034FBA16ACD70FEFE239\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/App_News/windows -BD:/App_News/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/App_News/build/windows/x64/appnews.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

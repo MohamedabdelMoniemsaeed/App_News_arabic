@@ -1,5 +1,6 @@
 import 'package:appnews/images/images.dart';
 import 'package:appnews/services/api.dart';
+import 'package:appnews/services/api_gnews.dart';
 import 'package:flutter/material.dart';
 
 class OneNew extends StatelessWidget {
@@ -23,8 +24,7 @@ class OneNew extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image:
-                        NetworkImage(articles.urlToImage ?? ImagesApp.defold),
+                    image: NetworkImage(articles.image ?? ImagesApp.defold),
                     fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(20)),
             width: size.width,
@@ -35,12 +35,14 @@ class OneNew extends StatelessWidget {
             // )
           ),
           Text(
+            textAlign: TextAlign.end,
             maxLines: 2,
             articles.title ?? 'No title',
             style: const TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
           ),
           Text(
             maxLines: 2,
+            textAlign: TextAlign.end,
             '${articles.description} ' ?? '',
             style: const TextStyle(
               color: Colors.grey,
